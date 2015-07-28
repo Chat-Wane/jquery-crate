@@ -1,0 +1,28 @@
+{
+    "name": "jquery-crate",
+    "version": "0.0.1",
+    "author": "Chat-Wane <grumpy.chat.wane@gmail.com>",
+    "description": "Cratify tool that turns a division into a distributed and decentralized collaborative editor",
+    "main": "./lib/cratify.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chat-wane/jquery-crate.git"
+    },
+    "keywords": [
+        "Random Peer Sampling",
+        "Adaptive",
+        "browser-to-browser communication",
+        "WebRTC"
+    ],
+    "dependencies": {
+        "crate-core": "0.0.x"
+    },
+    "bundledDependencies": [
+        "crate-core"
+    ],
+    "scripts":{
+        "debug": "browserify lib/cratify.js --debug > build/jquery-crate.bundle.debug.js",
+        "build": "browserify lib/cratify.js | uglifyjs > build/jquery-crate.bundle.js"
+    },
+    "license": "MIT"
+}
