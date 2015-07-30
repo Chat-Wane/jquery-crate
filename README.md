@@ -26,7 +26,7 @@ editor directly inside your web pages.
 // session: the identifier of the session allowing to connect to the network.
 //   If the session is not specified, it will create a brand new document with
 //   its own editing session identifier
-$('#myDistributedEditor').cratify(styleOptions, session)
+$('#myDistributedEditor').cratify(styleOptions, connectionOptions, session)
 ```
 
 # Contribute
