@@ -21,9 +21,11 @@ editor directly inside your web pages.
 
 ```javascript
 // #3 instanciate the editor into the targeted division
-// styleOptions: (TODO) explicit
+// styleOptions: change the style of the editor
+// connectionOptions: WebRTC specific options
 // session: the identifier of the session allowing to connect to the network.
-//   If the session is not specified, it will create a brand new document.
+//   If the session is not specified, it will create a brand new document with
+//   its own editing session identifier
 $('#myDistributedEditor').cratify(styleOptions, session)
 ```
 
