@@ -15,11 +15,14 @@
         "WebRTC"
     ],
     "dependencies": {
-        "crate-core": "0.0.x"
+        "crate-core": "../crate-core/",
+        "socket.io-client": "1.3.x",
+        "brace": "0.5.x",
+        "jquery-qrcode": "git://github.com/lrsjng/jquery-qrcode.git#master"
     },
-    "bundledDependencies": [
-        "crate-core"
-    ],
+    "browser": {
+        "jquery-qrcode": "./node_modules/jquery-qrcode/dist/jquery.qrcode.js"
+    },
     "scripts":{
         "debug": "browserify lib/cratify.js --debug > build/jquery-crate.bundle.debug.js",
         "build": "browserify lib/cratify.js | uglifyjs > build/jquery-crate.bundle.js"
