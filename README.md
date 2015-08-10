@@ -17,7 +17,7 @@ editor directly inside your web pages.
 
 ```html
 <!-- #1 include jquery, bootstrap, zeroclipboard, and the crate plugin //-->
-<script src='path/to/jquery.min.js'></script
+<script src='path/to/jquery.min.js'></script>
 <script src='path/to/bootstrap.min.js'></script>
 <script src='path/to/ZeroclipBoard.min.js'></script>
 
@@ -31,10 +31,10 @@ editor directly inside your web pages.
 ```
 
 ```javascript
-// #3A instanciate a new distributed editor into the targeted division.
+// #3A instantiate a new distributed editor into the targeted division.
 // signalingOptions: configure the signaling service to join or share the
 //   document. {address: http://example.of.signaling.service.address,
-                session: the-session-unique-identifier }
+//              session: the-session-unique-identifier }
 // webRTCOptions: configure the STUN/TURN server to establish WebRTC
 //   connections.
 // styleOptions: change the default styling options of the editor.
@@ -45,7 +45,7 @@ $('#myDistributedEditor').cratify( signalingOptions,
 ```
 
 ```javascript
-// #3B instanciate a distributed editor initialized with a JSON. The JSON
+// #3B instantiate a distributed editor initialized with a JSON. The JSON
 // contains the signaling options, the WebRTC options, and the shared data
 // type that represents the document.
 // importFromJSON: the JSON object containing the initializing data
@@ -58,7 +58,7 @@ $('#myDistributedEditor').cratify( importFromJSON,
 ## Access
 
 ```javascript
-var editor = $('myDistributedEditor').cratify( args )[0];
+var editor = $('myDistributedEditor').cratify(args)[0];
 
 // #4 access to the header object
 editor.header.prepend( newMenuButton1 );
