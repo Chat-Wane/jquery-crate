@@ -32,27 +32,20 @@ editor directly inside your web pages.
 
 ```javascript
 // #3A instantiate a new distributed editor into the targeted division.
-// signalingOptions: configure the signaling service to join or share the
-//   document. {address: http://example.of.signaling.service.address,
-//              session: the-session-unique-identifier }
-// webRTCOptions: configure the STUN/TURN server to establish WebRTC
-//   connections.
-// styleOptions: change the default styling options of the editor.
+// options {
+//   signalingOptions: configure the signaling service to join or share the
+//     document. {address: http://example.of.signaling.service.address,
+//                session: the-session-unique-identifier,
+//                connect: true|false }
+//   webRTCOptions: configure the STUN/TURN server to establish WebRTC
+//     connections.
+//   styleOptions: change the default styling options of the editor.
+//   name: the name of the document
+//   importFromJSON: the json object containing the aformentionned options plus
+//     the saved sequence. If any of the other above options are specified, the
+//     option in the json object are erased by them.
 
-$('#myDistributedEditor').cratify( signalingOptions,
-                                   webRTCOptions,                                   
-                                   styleOptions );
-```
-
-```javascript
-// #3B instantiate a distributed editor initialized with a JSON. The JSON
-// contains the signaling options, the WebRTC options, and the shared data
-// type that represents the document.
-// importFromJSON: the JSON object containing the initializing data
-// styleOptions: change the default styling options of the editor.
-
-$('#myDistributedEditor').cratify( importFromJSON,
-                                   styleOptions );
+$('#myDistributedEditor').cratify( options );
 ```
 
 ## Access
