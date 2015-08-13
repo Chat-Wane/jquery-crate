@@ -20,12 +20,16 @@
         "brace": "0.5.x",
         "jquery-qrcode": "git://github.com/lrsjng/jquery-qrcode.git#master"
     },
+    "devDependencies": {
+        "browserify": "6.2.x",
+        "brfs": "1.4.x"
+    },
     "browser": {
         "jquery-qrcode": "./node_modules/jquery-qrcode/dist/jquery.qrcode.js"
     },
     "scripts":{
-        "debug": "browserify lib/cratify.js --debug > build/jquery-crate.bundle.debug.js",
-        "build": "browserify lib/cratify.js | uglifyjs > build/jquery-crate.bundle.js"
+        "debug": "browserify -t brfs lib/cratify.js --debug > build/jquery-crate.bundle.debug.js",
+        "build": "browserify -t brfs lib/cratify.js | uglifyjs > build/jquery-crate.bundle.js"
     },
     "license": "MIT"
 }
