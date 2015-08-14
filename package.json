@@ -22,14 +22,18 @@
     },
     "devDependencies": {
         "browserify": "6.2.x",
-        "brfs": "1.4.x"
+        "brfs": "1.4.x",
+        "browserify": "0.6.x"
     },
     "browser": {
         "jquery-qrcode": "./node_modules/jquery-qrcode/dist/jquery.qrcode.js"
     },
+    "browserify": {
+        "transform": ["brfs"]
+    },
     "scripts":{
-        "debug": "browserify -t brfs lib/cratify.js --debug > build/jquery-crate.bundle.debug.js",
-        "build": "browserify -t brfs lib/cratify.js | uglifyjs > build/jquery-crate.bundle.js"
+        "debug": "browserify lib/cratify.js --debug > build/jquery-crate.bundle.debug.js",
+        "build": "browserify lib/cratify.js | uglifyjs > build/jquery-crate.bundle.js"
     },
     "license": "MIT"
 }
