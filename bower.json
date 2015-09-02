@@ -1,6 +1,6 @@
 {
     "name": "jquery-crate",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "main": "build/jquery-crate.bundle.js",
     "ignore": [
         "lib/*"
