@@ -1,6 +1,6 @@
 {
     "name": "jquery-crate",
-    "version": "0.0.4",
+    "version": "0.0.6",
     "author": "Chat-Wane <grumpy.chat.wane@gmail.com>",
     "description": "Cratify tool that turns a division into a distributed and decentralized collaborative editor",
     "main": "./lib/cratify.js",
@@ -15,16 +15,16 @@
         "WebRTC"
     ],
     "dependencies": {
-        "crate-core": "../crate-core/",
+        "crate-core": "0.0.x",
         "socket.io-client": "1.3.x",
         "brace": "0.5.x",
-        "markded" : "0.3.x",
+        "marked" : "0.3.x",
         "jquery-qrcode": "git://github.com/lrsjng/jquery-qrcode.git#master"
     },
     "devDependencies": {
         "browserify": "6.2.x",
         "brfs": "1.4.x",
-        "browserify": "0.6.x"
+        "browserify": "6.2.x"
     },
     "browser": {
         "jquery-qrcode": "./node_modules/jquery-qrcode/dist/jquery.qrcode.js"
