@@ -1,6 +1,6 @@
 {
     "name": "jquery-crate",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "author": "Chat-Wane <grumpy.chat.wane@gmail.com>",
     "description": "Cratify tool that turns a division into a distributed and decentralized collaborative editor",
     "main": "./lib/cratify.js",
